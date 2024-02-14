@@ -1,0 +1,19 @@
+    1  wget www.github.com
+    2  git --version
+    3  git init
+    4  git config --global user.email "ayethwe.tun19@gmail.com"
+    5  cd ~/.ssh && ssh-keygen
+    6  mkdir ~/.ssh
+    7  cd ~/.ssh && ssh-keygen
+    8  cat id_rsa.pub
+    9  cat ls -ltr.pub
+   10  git remote add origin https://github.com/ayethwetun/cs131.git
+   11  git push -u origin master
+   12  git remote add origin git@github.com:ayethwetun/cs131.git
+   13  wget www.github.com
+   14  mkdir cs131
+   15  cd cs131
+   16  git init
+   17  mkdir worksheet1
+   18  cd worksheet1
+   19  history > cmds.log
