@@ -1,0 +1,2 @@
+line count - 238 music_category.csv
+word count - 830 music_category.csv

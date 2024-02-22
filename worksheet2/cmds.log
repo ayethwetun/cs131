@@ -1,0 +1,59 @@
+    1  wget www.github.com
+    2  git --version
+    3  git init
+    4  git config --global user.email "ayethwe.tun19@gmail.com"
+    5  cd ~/.ssh && ssh-keygen
+    6  mkdir ~/.ssh
+    7  cd ~/.ssh && ssh-keygen
+    8  cat id_rsa.pub
+    9  cat ls -ltr.pub
+   10  git remote add origin https://github.com/ayethwetun/cs131.git
+   11  git push -u origin master
+   12  git remote add origin git@github.com:ayethwetun/cs131.git
+   13  wget www.github.com
+   14  mkdir cs131
+   15  cd cs131
+   16  git init
+   17  mkdir worksheet1
+   18  cd worksheet1
+   19  history > cmds.log
+   20  git add cmds.log
+   21  git commit "add cmds.log"
+   22  git commit -m ""
+   23  git config --global user.email ayethwe.tun19@gmail.com
+   24  git commit -m ""
+   25  git config --global user.email "ayethwe.tun19@gmail.com"
+   26  git config --global user.name "Aye"
+   27  git remote add origin git@github.com:ayethwetun/cs131.git
+   28  git commit -m ""
+   29  git commit -m "add cmds.log"
+   30  cd ..
+   31  git add worksheet1/
+   32  push
+   33  git push -u origin master
+   34  cd ..
+   35  cd ~/.ssh
+   36  cd ..
+   37  cd ~/.ssh && ssh-keygen
+   38  cat id_rsa.pub
+   39  cd ..
+   40  cd cs131
+   41  git push -u origin master
+   42  cd cs131
+   43  ls
+   44  mkdir worksheet2
+   45  cd worksheet2
+   46  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+   47  grep "United States" Global\ YouTube\ Statistics.csv
+   48  grep "Music" Global\ YouTube\ Statistics.csv
+   49  grep "Music" Global\ YouTube\ Statistics.csv > music_category.csv
+   50  ls
+   51  wc -l music_category.csv > counts.txt
+   52  wc -w music_category.csv >> counts.txt
+   53  ls
+   54  cat counts.txt
+   55  vi counts.txt
+   56  cat counts.txt
+   57  rm music_category.csv
+   58  ls
+   59  history > cmds.log
