@@ -1,0 +1,31 @@
+1. mkdir Assignment1
+
+2. echo $SHELL
+Output: /bin/bash
+
+echo $HOME
+Output: /mnt/scratch/SP24_CS131_Jyotika/ayesp24
+
+3. id -u
+Output: 1200
+
+groups
+Output: ayesp24 S78
+
+4. mkdir myDir
+chmod u-w myDir 
+Yes I'm allowed to cd into myDir. I can "ls" it. I can "ls -t" it. I can't create new files under it. 
+
+5. mkdir myDir2
+mkdir myDir3
+touch myFiles.txt
+mv myDir2/myFiles.txt myDir3/
+
+6. free -m 
+Total memory: 71367
+
+9. cat /etc/os-release 
+OS version: 8.6
+
+10. ls -l /etc/os-release
+Permission: rwxrwxrwx 

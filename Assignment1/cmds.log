@@ -1,0 +1,47 @@
+   65  cd cs131
+   66  ls
+   67  mkdir Assignment1 //Question 1
+   68  ls
+   69  cd Assignment1
+   70  echo $shell
+   71  echo $SHELL //Quesiton 2
+   72  echo $HOME //Question 2
+   73  id -u //Question 3
+   74  echo $USERNAME
+   75  groups //Question 3
+   76  mkdir myDir //Question 4
+   77  chmod u-w myDir //Question 4
+   78  ls
+   79  cd myDir
+   80  ls
+   81  ls -l
+   82  q
+   83  ~
+   84  cd
+   85  ls -l
+   86  cd Assignment1
+   87  ls
+   88  cd cs131
+   89  /
+   90  q
+   91  cd Assignment1
+   92  ls -l
+   93  cd ..
+   94  cd Assignment1
+   95  ls -l
+   96  cd myDir
+   97  mkdir temp1
+   98  cd ..
+   99  mkdir myDir2 //Question 5
+  100  mkdir myDir3 //Question 5
+  101  cd myDir2
+  102  touch myFile.txt //Question 6
+  103  cd .. 
+  104  mv myDir2/myFile.txt myDir3/ //Question 6
+  105  cd myDir3
+  106  ls
+  107  cd ..
+  108  free -m //Question 6
+  109  cat /etc/os-release //Quesiont 9
+  110  ls -l /etc/os-release //Question 10
+  111  history > cmds.log
