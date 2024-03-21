@@ -1,0 +1,55 @@
+1a. In this command, we're trying to look for files inside a folder called "/etc". Then, we're saving the names of those files into a file called "one.txt". If there are any errors during this process, like if we don't have permission to access certain files, we're saving those error messages into another file called "two.txt".
+b. When we look at "one.txt", we see a list of file names from the "/etc" folder. Each line in "one.txt" shows the name of a file found during the search.
+In "two.txt", we might find error messages if there were any issues during the search. All of the content in “two.txt” contains the error message "permission denied".
+
+2. The command that I used is “cut -d ',' -f 20,21 "Global YouTube Statistics.csv" | sort | uniq -c | sort -n -k1,1 -r | head -n 3”. 
+cut -d ',' -f 20,21 "Global YouTube Statistics.csv" extracts the columns representing the created year and created month from the CSV file. The -d ',' option specifies the delimiter as a comma, and -f 20,21 selects the 20th and 21st fields, which correspond to the created year and month, respectively.
+sort sorts the extracted Month-Year combinations alphabetically.
+uniq -c counts the occurrences of each Month-Year combination.
+sort -n -k1,1 -r sorts the counted combinations numerically (-n option) based on the count of channels (which is the first field), in reverse order (-r option).
+head -n 3 displays the top 3 combinations.
+
+3. Output, 
+PID TTY          TIME CMD
+3990334 ?        00:00:01 systemd
+3990336 ?        00:00:00 (sd-pam)
+3990342 ?        00:00:00 sshd
+3990346 pts/2    00:00:00 bash
+3997146 pts/2    00:00:00 ps
+
+4B. Output, 
+E325: ATTENTION
+Found a swap file by the name ".file.txt.swp"
+          owned by: ayesp24   dated: Wed Mar 20 22:07:45 2024
+         file name: ~ayesp24/cs131/Assignment2/file.txt
+          modified: no
+         user name: ayesp24   host name: sjsu.pic2.isv.ihost.com
+        process ID: 3997806 (still running)
+While opening file "file.txt"
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use ":recover" or "vim -r file.txt"
+    to recover the changes (see ":help recovery").
+    If you did this already, delete the swap file ".file.txt.swp"
+    to avoid this message.
+Swap file ".file.txt.swp" already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort: 
+
+The process ID for the VIM is 3997806.
+4D. Output, 
+    PID TTY          TIME CMD
+3990334 ?        00:00:01 systemd
+3990336 ?        00:00:00 (sd-pam)
+3990342 ?        00:00:00 sshd
+3990346 pts/2    00:00:00 bash
+3997719 ?        00:00:00 sshd
+3997722 pts/1    00:00:00 bash
+3998363 pts/2    00:00:00 ps
+ In the second terminal, when I execute the same command ps -u ayesp24 again, I notice that a new process with a different PID is created for vim, and the old process with PID 3997806 is no longer running. The new PID for vim is 3998363. This happened because when I quit the vi editor in the first terminal, it terminated the vim process associated with that session and started a new one when I reopened the editor.
+
+5. The init process in Linux is the first process started during the boot process and is assigned a process ID (PID) of 1. I used the command “ ps -ef | grep systemd | grep -v grep” to find the init process. The PID was 1. 
+
+6. The command "ps aux" is used in Linux to display a detailed list of all running processes on the system. The "ps" command stands for "process status", and "aux" are options that specify the output format. "a" stands for "all", which displays information about all processes regardless of their terminal or user. "u" stands for "user-oriented", which provides detailed information about each process, including the user who owns it, the CPU and memory usage, and the command that initiated the process. Overall, "ps aux" gives a comprehensive overview of all processes running on the system.
+

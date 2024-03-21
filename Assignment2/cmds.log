@@ -1,0 +1,141 @@
+    1  wget www.github.com
+    2  git --version
+    3  git init
+    4  git config --global user.email "ayethwe.tun19@gmail.com"
+    5  cd ~/.ssh && ssh-keygen
+    6  mkdir ~/.ssh
+    7  cd ~/.ssh && ssh-keygen
+    8  cat id_rsa.pub
+    9  cat ls -ltr.pub
+   10  git remote add origin https://github.com/ayethwetun/cs131.git
+   11  git push -u origin master
+   12  git remote add origin git@github.com:ayethwetun/cs131.git
+   13  wget www.github.com
+   14  mkdir cs131
+   15  cd cs131
+   16  git init
+   17  mkdir worksheet1
+   18  cd worksheet1
+   19  history > cmds.log
+   20  git add cmds.log
+   21  git commit "add cmds.log"
+   22  git commit -m ""
+   23  git config --global user.email ayethwe.tun19@gmail.com
+   24  git commit -m ""
+   25  git config --global user.email "ayethwe.tun19@gmail.com"
+   26  git config --global user.name "Aye"
+   27  git remote add origin git@github.com:ayethwetun/cs131.git
+   28  git commit -m ""
+   29  git commit -m "add cmds.log"
+   30  cd ..
+   31  git add worksheet1/
+   32  push
+   33  git push -u origin master
+   34  cd ..
+   35  cd ~/.ssh
+   36  cd ..
+   37  cd ~/.ssh && ssh-keygen
+   38  cat id_rsa.pub
+   39  cd ..
+   40  cd cs131
+   41  git push -u origin master
+   42  cd cs131
+   43  ls
+   44  mkdir worksheet2
+   45  cd worksheet2
+   46  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+   47  grep "United States" Global\ YouTube\ Statistics.csv
+   48  grep "Music" Global\ YouTube\ Statistics.csv
+   49  grep "Music" Global\ YouTube\ Statistics.csv > music_category.csv
+   50  ls
+   51  wc -l music_category.csv > counts.txt
+   52  wc -w music_category.csv >> counts.txt
+   53  ls
+   54  cat counts.txt
+   55  vi counts.txt
+   56  cat counts.txt
+   57  rm music_category.csv
+   58  ls
+   59  history > cmds.log
+   60  git add cmds.log
+   61  git add counts.txt
+   62  git commit -m "Worksheet 2"
+   63  git push -u origin master
+   64  ls
+   65  cd cs131
+   66  ls
+   67  mkdir Assignment1
+   68  ls
+   69  cd Assignment1
+   70  echo $shell
+   71  echo $SHELL
+   72  echo $HOME
+   73  id -u
+   74  echo $USERNAME
+   75  groups
+   76  mkdir myDir
+   77  chmod u-w myDir
+   78  ls
+   79  cd myDir
+   80  ls
+   81  ls -l
+   82  q
+   83  ~
+   84  cd
+   85  ls -l
+   86  cd Assignment1
+   87  ls
+   88  cd cs131
+   89  /
+   90  q
+   91  cd Assignment1
+   92  ls -l
+   93  cd ..
+   94  cd Assignment1
+   95  ls -l
+   96  cd myDir
+   97  mkdir temp1
+   98  cd ..
+   99  mkdir myDir2
+  100  mkdir myDir3
+  101  cd myDir2
+  102  touch myFile.txt
+  103  cd .. 
+  104  mv myDir2/myFile.txt myDir3/
+  105  cd myDir3
+  106  ls
+  107  cd ..
+  108  free -m
+  109  cat /etc/os-release
+  110  ls -l /etc/os-release
+  111  history > cmds.log
+  112  vi cmds.log
+  113  touch Assignment1.txt
+  114  vi Assignment1.txt
+  115  git add cmds.log
+  116  git add Assignment1.txt
+  117  git commit -m "Assignment1.txt"
+  118  git push -u origin master
+  119  cd cs131
+  120  mkdir Assignment2
+  121  cd Assignment2
+  122  find /etc -type f > one.txt 2> two.txt
+  123  cat one.txt
+  124  cat two.txt
+  125  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+  126  cut -d ',' -f 4,5 "Global YouTube Statistics.csv" | sed 's/-/,/g' | sort | uniq -c | sort -nr | head -n 3
+  127  awk -F ',' 'NR>1 {split($3, date, "-"); print date[2] "-" date[1]}' "Global YouTube Statistics.csv" | sort | uniq -c | sort -nr | head -n 3
+  128  cut -d, -f20,21 Global\ YouTube\ Statistics.csv|sort|uniq -c|sort -nr|head -3
+  129  cut -d ',' -f 20,21 "Global YouTube Statistics.csv" | sort | uniq -c | sort -n -k1,1 -r | head -n 3
+  130  cut -d ',' -f 20,21 "Global YouTube Statistics.csv" | sort | uniq -c | sort -k1,1n | awk '{print $2, $3, $1}' | grep -E '12 | 13 | 15 '
+  131  cut -d ',' -f 20,21 "Global YouTube Statistics.csv" | sort | uniq -c | sort -n -k1,1 -r | head -n 3
+  132  cut -d ',' -f 20,21 "Global YouTube Statistics.csv" | sort | uniq -c | awk '{print $1, $2}' | sort -k1,1n -k2,2 | awk '{print $2, $1}'
+  133  cut -d ',' -f 20,21 "Global YouTube Statistics.csv" | sort | uniq -c | awk '{print $1, $2}' | sort -k1,1nr -k2,2 | awk '{print $2, $1}' | head -n 3
+  134  cut -d ',' -f 20,21 "Global YouTube Statistics.csv" | sort | uniq -c | sort -n -k1,1 -r | head -n 3
+  135  whoami
+  136  ps -u ayesp24
+  137  vi file.txt
+  138  ps -u ayesp24
+  139  ps -ef|grep systemd|grep -v grep
+  140  ps aux
+  141  history > cmds.log
