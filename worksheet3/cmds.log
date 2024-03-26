@@ -1,0 +1,10 @@
+    1  awk -F, '$8=="United States" {print $0}' 'Global YouTube Statistics.csv' | sort -t, -k17,17nr | cut -d',' -f2,8,16 | head -n 1 > ws3.txt
+    2  awk -F, '$8=="United Kingdom" {print $0}' 'Global YouTube Statistics.csv' | sort -t, -k17,17nr | cut -d',' -f2,8,16 | head -n 1 >> ws3.txt
+    3  awk -F, '$8=="India" {print $0}' 'Global YouTube Statistics.csv' | sort -t, -k17,17nr | cut -d',' -f2,8,16 | head -n 1 >> ws3.txt
+    4  cat ws3.txt
+    5  awk -F, '$5=="Sports" {print $0}' 'Global YouTube Statistics.csv' | sort -t, -k3,3nr  | cut -d',' -f2,3,10 | head -n 1 >> ws3.txt
+    6  awk -F, '$5=="Education" {print $0}' 'Global YouTube Statistics.csv' | sort -t, -k3,3nr  | cut -d',' -f2,3,10 | head -n 1 >> ws3.txt
+    7  awk -F, '$5=="Entertainment" {print $0}' 'Global YouTube Statistics.csv' | sort -t, -k3,3nr  | cut -d',' -f2,3,10 | head -n 1 >> ws3.txt
+    8  vi ws3.txt
+    9  cat ws3.txt
+   10  history > cmds.log
