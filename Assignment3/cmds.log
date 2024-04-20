@@ -3,20 +3,16 @@
     3  cd Assignment3
     4  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/last.fake
     5  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/passwd.fake
-    6  wc -l last.fake
-    7  awk '/sp24/ {print}' last.fake > lastsp24.fake
-    8  wc -l lastsp24.fake
-    9  grep 'Sun' lastsp24.fake 
-   10  awk '/Sun/ {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print} END {print "Kudos to these people for putting in the work"}
-
-;
-q
-ls
-'
-   11  awk '($7 >= "23:00" || $7 <= "04:00") {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Night Owls List:"} {print} END {print "Night Owls are dope. Please ensure you get enough sleep though."}'
-   12  awk '($7 >= "05:00" || $7 <= "09:00") {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Early Birds List:"} {print} END {print "Early Birds are dope. Please ensure you get enough sleep though."}'
-   13  awk '$1 ~ /^t/' lastsp24.fake | awk '{print $1}' | sort | uniq
-   14  sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u
-   15  vi Assignment4.txt
-   16  cat Assignment4.txt
-   17  history > cmds.log
+    6  wc -l last.fake - Task 1
+    7  awk '/sp24/ {print}' last.fake > lastsp24.fake - Task 1
+    8  wc -l lastsp24.fake - Task 1
+    9  grep 'Sun' lastsp24.fake  - Task 2
+   10  awk '/Sun/ {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "The list of people who worked on Sunday are:"} {print} END {print "Kudos to these people for putting in the work"} - Task 2
+   11  awk '($7 >= "23:00" || $7 <= "04:00") {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Night Owls List:"} {print} END {print "Night Owls are dope. Please ensure you get enough sleep though."}' - Task 3
+   12  awk '($7 >= "05:00" && $7 <= "09:00") {print $1}' lastsp24.fake | sort | uniq | awk 'BEGIN {print "Early Birds List:"} {print} END {print "Early Birds are dope. Please ensure you get enough sleep though."}' - Task 4
+   13  awk '$1 ~ /^t/' lastsp24.fake | awk '{print $1}' | sort | uniq - Task 5
+   14  awk -F: '($1 ~ /^a/ && $3 % 2 == 0) {print $1}' passwd.fake | sort | uniq - Task 6
+   15  sed 's/[a-zA-Z0-9 ]//g' passwd.fake | sort -u - Task 7
+   16  vi Assignment4.txt
+   17  cat Assignment4.txt
+   18  history > cmds.log
