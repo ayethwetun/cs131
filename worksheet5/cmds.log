@@ -1,0 +1,46 @@
+    1  ls
+    2  cd cs131
+    3  ls
+    4  mkdir worksheet5
+    5  mkdir United States
+    6  ls
+    7  rm -r United States
+    8  ls
+    9  ls worksheet5
+   10  cd worksheet 5
+   11  cd worksheet5
+   12  mkdir United States
+   13  ls
+   14  rm -r United States
+   15  mkdir "United States"
+   16  ls
+   17  cd United States
+   18  rm -r "United States"
+   19  mkdir 'United States'
+   20  ls
+   21  cd 'United States'
+   22  cd ..
+   23  wget https://raw.githubusercontent.com/jyotikahp/DemoRepoForCS131/main/Global%20YouTube%20Statistics.csv
+   24  ls
+   25  cd United States
+   26  cd 'United States'
+   27  cd ..
+   28  cd 'United States'
+   29  touch Comedy.txt
+   30  touch Entertainment.txt
+   31  touch Gaming.txt
+   32  Music.txt
+   33  touch Music.txt
+   34  cd ..
+   35  touch ws5.txt
+   36  vi script.sh
+   37  cat script.sh
+   38  ./script.sh
+   39  chmod +x script.sh
+   40  ./script.sh
+   41  cat ws5.txt
+   42  cd 'United States'
+   43  ls
+   44  cat Comedy.txt
+   45  cd ..
+   46  history > cmds.log
